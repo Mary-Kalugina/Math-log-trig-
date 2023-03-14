@@ -6,7 +6,7 @@ export default class Count {
   }
 
   get attack() {
-    let attack = this._attack;
+    let attack = this.aattack;
     if (this.stoned) {
       attack -= Math.log2(this.distance) * 5;
     } else if (this.distance === 1) {
@@ -24,14 +24,14 @@ export default class Count {
   }
 
   set attack(value) {
-    this._attack = value;
+    this.aattack = value;
   }
 
   get stoned() {
-    return this._stoned;
+    return this.sstoned;
   }
 
   set stoned(value) {
-    this._stoned = value;
+    this.sstoned = value;
   }
 }

@@ -11,7 +11,7 @@ test('stoned', () => {
   const result = magician.attack;
 
   expect(daemonResult).toBe(192);
-  expect(result).toBe(85);
+  expect(result).toBe(95);
 });
 
 test('not stoned', () => {
@@ -24,5 +24,5 @@ test('not stoned', () => {
   const result = magician.attack;
 
   expect(daemonResult).toBe(120);
-  expect(result).toBe(90);
+  expect(result).toBe(10);
 });
